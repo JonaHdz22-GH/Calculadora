@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#2d2c2c</color>
+
+
+    <color name="fondo">#000000</color>
+    <color name="Fondobtn">#191919</color>
+    <color name="fondoOperaciones">#17AB3B</color>
+    <color name="letra1">#FFFFFF</color>
+    <color name="letra2">#FFFFFF</color>
+    <color name="letra3">#D61D1D</color>
+    <color name="letra4">#17AB3B</color>
+    <color name="pantalla">#000000</color>
+    <color name="pulsar">#1F1F1F</color>
+    <color name="pulsar1">#17CB3D</color>
+
+</resources>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/pantalla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/tabPantalla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/fondo"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/lblPantalla2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:layout_weight="10"
+                    android:background="@color/pantalla"
+                    android:gravity="end"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/letra2"
+                    android:textSize="30sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/lblPantalla1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:background="@color/pantalla"
+                    android:gravity="end"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/letra2"
+                    android:textSize="38sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btnCE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="borrar"
+                    android:text="CE"
+                    android:textColor="@color/letra3"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="borrar"
+                    android:text="C"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/btnBloqueo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="bloqueo"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp"
+                    app:srcCompat="@drawable/bloquear" />
+
+                <ImageButton
+                    android:id="@+id/ibtnBorrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="borrar"
+                    android:textColor="@color/letra4"
+                    android:textSize="20sp"
+                    app:srcCompat="@drawable/flecha" />
+
+            </TableRow>
+
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btnPi"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="π"
+                    android:textColor="@color/letra4"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnRaiz"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:onClick="raiz"
+                    android:text="√"
+                    android:textColor="@color/letra4"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnCuadrado"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="cuadrado"
+                    android:text="X²"
+                    android:textColor="@color/letra4"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnEntre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="operacion"
+                    android:text="÷"
+                    android:textColor="@color/letra4"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:onClick="tecla"
+                    android:text="7"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="8"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:onClick="tecla"
+                    android:text="9"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnPor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="operacion"
+                    android:text="×"
+                    android:textColor="@color/letra4"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="4"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="5"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="6"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnMenos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="operacion"
+                    android:text="-"
+                    android:textColor="@color/letra4"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="1"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="2"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="3"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnMas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="operacion"
+                    android:text="+"
+                    android:textColor="@color/letra4"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btnSigno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="Signo"
+                    android:text="±"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:onClick="tecla"
+                    android:text="0"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnPunto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado"
+                    android:enabled="true"
+                    android:onClick="punto"
+                    android:text="."
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnIgual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:background="@drawable/botonpulsado1"
+                    android:enabled="true"
+                    android:onClick="Igual"
+                    android:text="="
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+            </TableRow>
+        </TableLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
